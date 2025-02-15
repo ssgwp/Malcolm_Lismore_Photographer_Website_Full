@@ -1,0 +1,89 @@
+form {
+  width: 100%;
+  max-width: 600px; /* Adjust the form width */
+  margin: 0 auto; /* Center the form */
+  font-size: 1rem; /* Control font size */
+}
+
+label {
+  display: block; /* Ensure label takes full width */
+  text-align: left; /* Align labels to the left */
+  margin-bottom: 5px; /* Add space between label and input */
+}
+
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+input[type="password"],
+input[type="date"],
+textarea,
+input[type="submit"] {
+  width: 100%; /* Make the input fields and submit button full-width */
+  padding: 10px; /* Add padding for consistency */
+  font-size: 1rem; /* Adjust font size */
+  border: 1px solid #ccc; /* Add border for inputs */
+  border-radius: 5px; /* Rounded corners */
+  box-sizing: border-box; /* Ensure padding doesn't affect width */
+  margin-bottom: 1rem; /* Add space between fields */
+}
+
+textarea {
+  height: 150px; /* Set a custom height for textarea */
+  resize: vertical; /* Allow users to resize the textarea vertically */
+}
+
+input[type="submit"] {
+  background-color: #4CAF50; /* Submit button color */
+  color: white; /* Button text color */
+  border: none; /* Remove border from submit button */
+  cursor: pointer; /* Change cursor to pointer for submit button */
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049; /* Hover effect */
+}
+
+#password-strength {
+  display: block;
+  margin-top: -0.5rem;
+  margin-bottom: 1rem;
+}
+
+.notification {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  padding: 15px;
+  color: white;
+  background-color: green; /* Notification background */
+  border-radius: 5px;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+  
+.blogn1 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("image/blog1.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.blogn2 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("image/blog2.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.blogn3 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("image/blog3.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}

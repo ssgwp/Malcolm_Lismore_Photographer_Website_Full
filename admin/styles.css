@@ -1,0 +1,288 @@
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+  background-color: #f4f4f4;
+  line-height: 1.6;
+}
+
+/* Header styling */
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+}
+
+header h1 {
+  margin-bottom: 0.5rem;
+}
+
+header nav a {
+  color: #fff;
+  margin: 0 5rem;
+  text-decoration: none;
+}
+
+header nav a:hover {
+  text-decoration: underline;
+}
+
+/* Main content styling */
+main {
+  padding: 2rem;
+}
+
+main section {
+  margin-bottom: 2rem;
+}
+
+/* Footer styling */
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.button-container2 {
+  text-align: right; /* Aligns the button to the right */
+  margin-top: -30px; /* Optional: Add margin to the top */
+  margin-right: 15px; /* Moves the button 10px to the left */
+}
+
+.login-button {
+  background-color: green; /* Set button background to green */
+  color: white; /* Set text color to white */
+  border: none; /* Remove border */
+  padding: 10px 20px; /* Add padding for button size */
+  font-size: 16px; /* Set font size */
+  cursor: pointer; /* Change cursor on hover */
+  border-radius: 5px; /* Optional: rounded corners */
+  transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+.login-button:hover {
+  background-color: darkgreen; /* Optional: Darker green on hover */
+}
+
+/* Styling for blue boxes */
+.blue-box-container {
+  display: flex;
+  justify-content: space-between; /* Space out the boxes evenly */
+  padding: 1rem;
+}
+
+.blue-box {
+  background-color: #0CAFFF;
+  color: white;
+  width: 23%; /* Make each box take up about 23% of the container width */
+  height: 150px; /* Set a fixed height */
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  align-items: center; /* Center items horizontally */
+  justify-content: center; /* Center items vertically */
+  font-size: 18px;
+  border-radius: 5px; /* Optional: rounded corners */
+  position: relative; /* For potential absolute positioning of inner elements */
+}
+
+.count_name {
+  align-self: flex-start; /* Align the name to the left */
+  margin-bottom: 5px; /* Add space below the name */
+  margin-top: -55px; /* Optional: Add margin to the top */
+  margin-left: 15px; /* Optional: Add margin to the right */
+  font-size: 24px;
+}
+
+.count_number {
+  font-size: 24px; /* Make the number larger, if desired */
+  font-weight: bold; /* Make the number bold */
+}
+
+.section__container {
+  max-width: var(--max-width);
+  margin: auto;
+  padding: 5rem 1rem;
+}
+
+.section__header {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  font-weight: 400;
+  font-family: var(--header-font);
+  color: var(--text-dark);
+  text-align: center;
+}
+
+/* Table Styles */
+table {
+  width: 100%;               /* Make the table take the full width of the container */
+  border-collapse: collapse; /* Collapse borders for a cleaner look */
+  table-layout: fixed;       /* Set table layout to fixed for equal column widths */
+}
+
+thead {
+  background-color: #333; /* Dark background for the header */
+  color: #fff; /* White text for header */
+}
+
+thead th {
+  padding: 12px; /* Padding inside header cells */
+  text-align: left; /* Align header text to the left */
+  font-weight: bold; /* Make header text bold */
+}
+
+tbody td {
+  padding: 12px; /* Padding inside body cells */
+  border-bottom: 1px solid #ddd; /* Light border under each row */
+}
+
+/* Hover effect for rows */
+tbody tr:hover {
+  background-color: #f5f5f5; /* Light background on hover */
+}
+
+.data_filter_div {
+  display: flex;
+  justify-content: flex-end; /* Align to the right */
+  margin-bottom: 20px;
+}
+
+.search-form {
+  display: flex;
+  gap: 10px;
+}
+
+.search-form input[type="text"] {
+  padding: 8px;
+  font-size: 16px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.search-form button {
+  padding: 8px 12px;
+  font-size: 16px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.search-form button:hover {
+  background-color: #555;
+}
+
+/* Style the container that holds the file input */
+.file-upload-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Hide the default file input */
+input[type="file"] {
+  display: none;
+}
+
+/* Style the custom "Choose File" button */
+.file-upload-button {
+  padding: 8px 12px;
+  font-size: 16px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.file-upload-button:hover {
+  background-color: #555;
+}
+
+.delete-link {
+  color: red; /* Set the desired font color */
+  font-weight: bold; /* Optional: make the text bold */
+  text-decoration: none; /* Optional: remove underline */
+}
+
+.delete-link:hover {
+  color: darkred; /* Optional: change color on hover */
+}
+
+
+/* Mult iselect dropdown */
+.data-table th, .data-table td {
+  padding: 12px; /* Padding for cells */
+  border: 1px solid #ddd; /* Cell border */
+  word-wrap: break-word; /* Wrap text if too long */
+}
+
+
+/* Optional: Add responsiveness */
+@media (max-width: 768px) {
+  .data-table, .data-table thead, .data-table tbody, .data-table th, .data-table td, .data-table tr {
+      display: block; /* Stack elements */
+      width: 100%; /* Full width for mobile */
+  }
+
+  .data-table thead {
+      display: none; /* Hide header on small screens */
+  }
+
+  .data-table tr {
+      margin-bottom: 15px; /* Space between rows */
+  }
+
+  .data-table td {
+      text-align: right; /* Align cell content to the right */
+      padding-left: 50%; /* Space for labels */
+      position: relative; /* Positioning for label */
+  }
+
+  .data-table td:before {
+      content: attr(data-label); /* Label for cell */
+      position: absolute; /* Positioning for label */
+      left: 10px; /* Position label */
+      width: calc(50% - 20px); /* Adjust width */
+      padding-right: 10px; /* Space for label */
+      white-space: nowrap; /* Prevent label wrapping */
+      text-align: left; /* Align label */
+  }
+}
+
+
+
+/* Responsive design: Adjust font size and padding for smaller screens */
+@media (max-width: 600px) {
+  table, thead, tbody, th, td, tr {
+    display: block;
+  }
+  thead {
+    display: none; /* Hide the header row on small screens */
+  }
+  tbody td {
+    text-align: right; /* Right-align on small screens */
+    padding: 10px 20px;
+    position: relative;
+  }
+  tbody td::before {
+    content: attr(data-label); /* Display column header before data */
+    position: absolute;
+    left: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+}
+
